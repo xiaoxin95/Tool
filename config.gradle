@@ -1,0 +1,149 @@
+ext {
+    compileSdkVerison = 28
+    applicationId = "com.unipock.easydrop"
+    buildToolsVersion = "28.0.0"
+    minSdkVersion = 19
+    targetSdkVersion = compileSdkVerison
+    versionCode = 1
+    versionName = "1.0.0"
+
+    androidx = "1.1.0"
+    navigation_fragment = "2.1.0"
+    navigation_fragment_ktx = "2.2.1"
+
+    appcompatV7 = "28.0.0"
+    supportV4 = "28.0.0"
+    design = "28.0.0"
+    constraintlayout = "2.0.1"
+    gson = "2.8.6"
+    glide = "4.10.0"
+    banner = "1.4.10"
+    retrofit2 = "2.6.2"
+    retrofit2_converter_gson = "2.2.0"
+    retrofit2_rxjava2_adapter = "1.0.0"
+    retrofit2_adapter_rxjava2 = "2.5.0"
+    rxandroid = "2.1.0"
+    cardview = "1.0.0"
+
+    rxjava2 = "2.2.3"
+    zxing = "3.3.3"
+
+    kotlin_version = '1.3.60'
+    lifecycle_viewmodel_ktx = '2.1.0'
+
+    material = "1.0.0"
+    annotation = "1.1.0"
+    lifecycle_extensions = "2.1.0"
+
+    test_runner = "1.2.0"
+    espresso_core = "3.2.0"
+    test_junit = "4.12"
+
+    barlibrary = "2.3.0"
+
+    autosize = "1.2.0"
+
+    barlibrary = "2.3.0"
+    legacy_support_v4 = "1.0.0"
+    recyclerview = "1.0.0"
+
+    // 推送
+//    jpush = "3.5.4"
+//    jcore = "2.2.8"
+
+    //上拉与加载
+    BaseRecyclerViewAdapterHelper = "3.0.4"
+    SmartRefreshLayoutHeader = "1.1.0"
+
+
+    loadinglayout = "1.0.1"
+
+    PictureSelector = "v2.5.8"
+    bga_qrcode_zxing = "1.3.7"
+
+    // 文件下载
+    filedownloader = "1.7.7"
+
+    lifecycle_extensions_ex = "1.1.1"
+    // 图片选择
+    android_pickerView = "4.1.9"
+
+    dependencies = [
+            impl_test_runner                  : "androidx.test:runner:${rootProject.ext.test_runner}",
+            impl_espresso_core                : "androidx.test.espresso:espresso-core:${rootProject.ext.espresso_core}",
+            impl_junit                        : "junit:junit:${rootProject.ext.test_junit}",
+            // androidx
+            impl_androidx                     : "androidx.appcompat:appcompat:${rootProject.ext.androidx}",
+            impl_core_ktx                     : "androidx.core:core-ktx:+",
+            impl_lifecycle_viewmodel_ktx      : "androidx.lifecycle:lifecycle-viewmodel-ktx:${rootProject.ext.lifecycle_viewmodel_ktx}",
+            impl_lifecycle_extensions         : "androidx.lifecycle:lifecycle-extensions:${rootProject.ext.lifecycle_extensions}",
+            impl_legacy_support_v4            : "androidx.legacy:legacy-support-v4:${rootProject.ext.legacy_support_v4}",
+            impl_recyclerview                 : "androidx.recyclerview:recyclerview:${rootProject.ext.recyclerview}",
+            // 导航
+            impl_navigation_fragment          : "androidx.navigation:navigation-fragment:${rootProject.ext.navigation_fragment}",
+            impl_navigation_ui                : "androidx.navigation:navigation-ui:${rootProject.ext.navigation_fragment}",
+
+            impl_navigation_fragment_ktx      : "androidx.navigation:navigation-fragment-ktx:${rootProject.ext.navigation_fragment_ktx}",
+            impl_navigation_ui_ktx            : "androidx.navigation:navigation-ui-ktx:${rootProject.ext.navigation_fragment_ktx}",
+
+            impl_lifecycle_extensions_ex      : "android.arch.lifecycle:extensions:${rootProject.ext.lifecycle_extensions_ex}",
+            // 约束布局
+            impl_constraint_layout            : "androidx.constraintlayout:constraintlayout:${rootProject.ext.constraintlayout}",
+            // 卡片布局
+            impl_cardview                     : "androidx.cardview:cardview:${rootProject.ext.cardview}",
+            // 材料
+            impl_material                     : "com.google.android.material:material:${rootProject.ext.material}",
+            // 注解
+            impl_annotation                   : "androidx.annotation:annotation:${rootProject.ext.annotation}",
+            // 轮播图
+            impl_banner                       : "com.youth.banner:banner:${rootProject.ext.banner}",
+            //数据解析
+            impl_gson                         : "com.google.code.gson:gson:${rootProject.ext.gson}",
+            //网络请求 begin
+            impl_retrofit                     : "com.squareup.retrofit2:retrofit:${rootProject.ext.retrofit2}",
+            impl_retrofit_converter_gson      : "com.squareup.retrofit2:converter-gson:${rootProject.ext.retrofit2_converter_gson}",
+            impl_retrofit2_rxjava2_adapter    : "com.jakewharton.retrofit:retrofit2-rxjava2-adapter:${rootProject.ext.retrofit2_rxjava2_adapter}",
+            impl_retrofit2_adapter_rxjava2    : "com.squareup.retrofit2:adapter-rxjava2:${rootProject.ext.retrofit2_adapter_rxjava2}",
+            //网络请求 end
+
+            // rxJava begin
+            impl_rxandroid                    : "io.reactivex.rxjava2:rxandroid:${rootProject.ext.rxandroid}",
+            impl_rxjava                       : "io.reactivex.rxjava2:rxjava:${rootProject.ext.rxjava2}",
+            // rxJava end
+
+            // 二维码相关
+            impl_bga_qrcode_zxing             : "cn.bingoogolapple:bga-qrcode-zxing:${rootProject.ext.bga_qrcode_zxing}",
+            // 二维码 begin
+            impl_zxing                        : "com.google.zxing:core:${rootProject.ext.zxing}",
+            impl_zxing_parent                 : "com.google.zxing:zxing-parent:${rootProject.ext.zxing}",
+            // 二维码 end
+
+            // kotlin
+            impl_kotlin_version               : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${rootProject.ext.kotlin_version}",
+            // 沉浸式
+            impl_barlibrary                   : "com.gyf.barlibrary:barlibrary:${rootProject.ext.barlibrary}",
+            // 适配
+            impl_autosize                     : "me.jessyan:autosize:${rootProject.ext.autosize}",
+
+            // 推送
+            // 刷新控件库
+            impl_SmartRefreshLayout           : "com.scwang.smartrefresh:SmartRefreshLayout:${rootProject.ext.SmartRefreshLayoutHeader}",
+            impl_SmartRefreshHeader           : "com.scwang.smartrefresh:SmartRefreshHeader:${rootProject.ext.SmartRefreshLayoutHeader}",
+            // 加载进度
+            impl_loadinglayout                : "com.github.czy1121:loadinglayout:${rootProject.ext.loadinglayout}",
+            // 图片加载 begin
+            impl_glide_compiler               : "com.github.bumptech.glide:compiler:${rootProject.ext.glide}",
+            impl_glide                        : "com.github.bumptech.glide:glide:${rootProject.ext.glide}",
+            // 图片加载 end
+            // 照片选择
+            impl_PictureSelector              : "com.github.LuckSiege.PictureSelector:picture_library:${rootProject.ext.PictureSelector}",
+            // 文件下载
+            impl_filedownloader               : "com.liulishuo.filedownloader:library:${rootProject.ext.filedownloader}",
+            // 日期选择
+            impl_android_pickerView           : "com.contrarywind:Android-PickerView:${rootProject.ext.android_pickerView}",
+
+            impl_BaseRecyclerViewAdapterHelper: "com.github.CymChad:BaseRecyclerViewAdapterHelper:${rootProject.ext.BaseRecyclerViewAdapterHelper}",
+
+    ]
+
+}

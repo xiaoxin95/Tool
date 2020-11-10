@@ -1,0 +1,3 @@
+include ':UnipayTool'
+include ':app'
+rootProject.name = "Tool"

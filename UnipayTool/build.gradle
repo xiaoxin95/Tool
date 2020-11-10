@@ -1,0 +1,110 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+
+    /**
+     * 资源文件分包
+     */
+    sourceSets {
+        main {
+            res.srcDirs = [
+                    'src/main/res/layouts/fragment',
+                    'src/main/res/layouts/item',
+                    'src/main/res/layouts/dialog',
+                    'src/main/res/layouts/view',
+                    'src/main/res/layouts',
+                    'src/main/res'
+            ]
+            //jni库的调用会到资源文件夹下libs里面找so文件
+            jniLibs.srcDirs = ['libs']
+        }
+
+    }
+
+
+    compileSdkVersion 30
+    buildToolsVersion "30.0.1"
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        multiDexEnabled true
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    testImplementation rootProject.ext.dependencies.impl_junit
+    androidTestImplementation rootProject.ext.dependencies.impl_test_runner
+    androidTestImplementation rootProject.ext.dependencies.impl_espresso_core
+
+    implementation rootProject.ext.dependencies.impl_legacy_support_v4
+    implementation rootProject.ext.dependencies.impl_recyclerview
+    implementation rootProject.ext.dependencies.impl_androidx
+    implementation rootProject.ext.dependencies.impl_navigation_fragment
+    implementation rootProject.ext.dependencies.impl_navigation_ui
+    implementation rootProject.ext.dependencies.impl_navigation_fragment_ktx
+    implementation rootProject.ext.dependencies.impl_navigation_ui_ktx
+    implementation rootProject.ext.dependencies.impl_constraint_layout
+    implementation rootProject.ext.dependencies.impl_material
+    implementation rootProject.ext.dependencies.impl_annotation
+    implementation rootProject.ext.dependencies.impl_gson
+    implementation rootProject.ext.dependencies.impl_retrofit
+    implementation rootProject.ext.dependencies.impl_retrofit_converter_gson
+    implementation rootProject.ext.dependencies.impl_retrofit2_rxjava2_adapter
+    implementation rootProject.ext.dependencies.impl_retrofit2_adapter_rxjava2
+    implementation rootProject.ext.dependencies.impl_rxandroid
+    implementation rootProject.ext.dependencies.impl_cardview
+    implementation rootProject.ext.dependencies.impl_rxjava
+
+    implementation rootProject.ext.dependencies.impl_glide
+    annotationProcessor rootProject.ext.dependencies.impl_glide_compiler
+    implementation rootProject.ext.dependencies.impl_banner
+    // 一下三个是关于kotlin的导入
+    implementation rootProject.ext.dependencies.impl_kotlin_version
+    implementation rootProject.ext.dependencies.impl_core_ktx
+    implementation rootProject.ext.dependencies.impl_lifecycle_viewmodel_ktx
+    implementation rootProject.ext.dependencies.impl_lifecycle_extensions
+    // 屏幕适配导入地址
+    implementation rootProject.ext.dependencies.impl_autosize
+    // 状态栏适配透明
+    implementation rootProject.ext.dependencies.impl_barlibrary
+    implementation rootProject.ext.dependencies.impl_BaseRecyclerViewAdapterHelper
+    implementation rootProject.ext.dependencies.impl_SmartRefreshLayout
+    implementation rootProject.ext.dependencies.impl_SmartRefreshHeader
+    // 加载进度
+    implementation rootProject.ext.dependencies.impl_loadinglayout
+    // 照片选择
+    implementation rootProject.ext.dependencies.impl_PictureSelector
+    // 文件下载
+    implementation rootProject.ext.dependencies.impl_filedownloader
+    implementation rootProject.ext.dependencies.impl_lifecycle_extensions_ex
+    // 二维码相关
+    implementation rootProject.ext.dependencies.impl_bga_qrcode_zxing
+    // 时间选择
+    implementation rootProject.ext.dependencies.impl_android_pickerView
+
+}

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#251F63</color>
+    <color name="colorAccent">#D81B60</color>
+
+
+    <color name="color_title_black">#000000</color>
+
+    <color name="colorBGWhite">#FFFFFF</color>
+    <color name="colorBGD7D7D7">#D7D7D7</color>
+    <color name="colorBG231E5E">#231E5E</color>
+    <color name="colorBGD3D2DF">#D3D2DF</color>
+    <color name="colorBG333333">#333333</color>
+    <color name="colorBGBlue">#231E5E</color>
+    <color name="colorBGF9F9F9">#F9F9F9</color>
+    <color name="colorBGBlack">#000000</color>
+    <color name="colorBGRed">#FF0000</color>
+    <color name="colorBG150509">#150509</color>
+    <color name="colorBGA4A4A4">#A4A4A4</color>
+
+    <color name="colorTextColor666666">#666666</color>
+
+    <color name="colorTitleTextColor">#0A0A0A</color>
+
+    <color name="colorBGFAFAFA">#FAFAFA</color>
+    <color name="colorBGEDEDED">#EDEDED</color>
+    <color name="colorBGEEEEEE">#EEEEEE</color>
+    <color name="colorBGF7F7F7">#F7F7F7</color>
+    <color name="colorBGF5F5F5">#F5F5F5</color>
+
+    <!--字体颜色-->
+    <color name="colorTextBlack">#000000</color>
+    <color name="colorTextWhite">#FFFFFF</color>
+    <color name="colorTextRed">#9E5E61</color>
+    <color name="colorTextF21010">#F21010</color>
+    <color name="colorTextColor333333">#333333</color>
+    <color name="colorTextColor231E5E">#231E5E</color>
+    <color name="colorTextColorF21010">#F21010</color>
+    <color name="colorTextColor999999">#999999</color>
+    <color name="colorTextColor000000">#000000</color>
+    <color name="colorTextColorFEFEFE">#FEFEFE</color>
+    <color name="colorTextColor0A0A0A">#0A0A0A</color>
+    <color name="colorTextColorF9F9F9">#F9F9F9</color>
+    <color name="colorTextColorD3D8DD">#D3D8DD</color>
+
+    <color name="colorIconWhite">#FFFFFF</color>
+    <color name="colorIconYellow">#D9A34F</color>
+    <color name="colorIconBlack">#000000</color>
+
+    <!--白线-->
+    <color name="colorLineWhite">#FFFFFF</color>
+    <color name="colorLineBlack">#000000</color>
+    <color name="colorLine999999">#999999</color>
+    <color name="colorLineA0A0A0">#A0A0A0</color>
+    <color name="colorLineEDEDED">#EDEDED</color>
+
+    <color name="colorHintGray">#79FEF8DA</color>
+
+
+
+
+<!--    图片style-->
+    <color name="app_color_grey">#393a3e</color>
+    <color name="app_color_black">#000000</color>
+    <color name="app_color_f6">#f6f6f6</color>
+    <color name="app_color_fa">#fafafa</color>
+    <color name="app_color_divider">#B6B6B6</color>
+    <color name="app_color_c51">#f94c51</color>
+    <color name="app_color_green">#43c117</color>
+    <color name="app_color_53575e">#53575e</color>
+    <color name="app_color_transparent">#00000000</color>
+    <color name="app_color_white">#FFFFFF</color>
+    <color name="app_color_blue">#7D7DFF</color>
+    <color name="app_color_9b">#9b9b9b</color>
+    <color name="app_color_e0ff6100">#E0FF6100</color>
+    <color name="app_color_red">#FF0000</color>
+
+
+
+</resources>
